@@ -11,26 +11,10 @@ typedef struct medical {
 	char purdate[15];
 	char expdate[15];
 	char manudate[15];
-	char suppname[30];
 }medical;
-typedef struct bill {
-	char billno[6];
-	char cname[30];
-	char mediname[30];
-	int qty;
-	double mrp;
-	double total;
-	int day;
-	int month;
-	int year;
-
-}bill;
 
 //function for main menu
 void mainmenu();
-
-//function for bill slip
-void makebill();
 
 //check for products with qty less than 10
 void stock();
@@ -46,3 +30,6 @@ void modify();
 
 //Delete a record
 void del(medical rm);
+
+//to move to a particular point on the screen
+void move(int x, int y);
